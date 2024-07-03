@@ -1,9 +1,9 @@
-import * as functions from 'firebase-functions';
+import functions from 'firebase-functions';
 import express from 'express';
 
 const app = express();
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello from Firebase!');
 });
 
