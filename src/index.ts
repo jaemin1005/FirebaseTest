@@ -1,12 +1,10 @@
-import express from "express";
-import path from "path";
 import * as functions from 'firebase-functions';
+import express from 'express';
 
 const app = express();
-// app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/", (req, res) => {
-  res.send("Hello, world");
-})
+app.get('/hello', (req, res) => {
+  res.send('Hello from Firebase!');
+});
 
-app.listen(3000);
+export const api = functions.https.onRequest(app);
