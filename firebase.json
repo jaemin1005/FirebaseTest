@@ -1,10 +1,5 @@
 {
   "hosting": {
-    "source": "dist/index.js",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "source": "dist/index.js"
   }
 }
