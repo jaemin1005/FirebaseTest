@@ -1,7 +1,11 @@
 {
   "hosting": {
-    "public" : "public",
+    "public": "public",
     "rewrites": [
+      {
+        "source": "/static/**",
+        "destination": "/static/static.html"
+      },
       {
         "source": "**",
         "function": "api"
