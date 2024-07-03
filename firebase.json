@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "source": "dist/server/index.ts",
+    "source": "dist/server/index.js",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,5 +9,7 @@
   },
   "directories": {
         "serve": "dist"
-    }
+  },
+  "files": ["dist", "index.js"],
+  "main": "index.js"
 }
