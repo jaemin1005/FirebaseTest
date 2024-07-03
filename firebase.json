@@ -1,5 +1,5 @@
 {
   "hosting": {
-    "source": "dist/index.js"
+    "source": "./dist"
   }
 }
