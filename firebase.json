@@ -6,10 +6,5 @@
       "**/.*",
       "**/node_modules/**"
     ]
-  },
-  "directories": {
-        "serve": "dist"
-  },
-  "files": ["dist", "index.js"],
-  "main": "index.js"
+  }
 }
