@@ -1,17 +1,11 @@
 {
   "hosting": {
-    "source": ".",
-    "codebase": "default",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run build"
-      ],
-    "frameworksBackend": {
-      "region": "asia-east1"
-    }
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "api"
+      }
+    ]
   }
 }
